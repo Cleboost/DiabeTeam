@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "title": "Parc Lorient (Sport & Pique-nique)",
+    "date": "2026-06-14",
+    "location": "Montéléger, Parc Lorient",
+    "description": "Matin : sport kilomètre boucle diabète (RDV 10h). Midi : pique-nique convivial (RDV 12h).",
+    "type": "association"
+  },
+  {
+    "id": 2,
+    "title": "Activité sportive de rentrée (Sondage en cours)",
+    "date": "2026-09-13",
+    "location": "Lieu à confirmer",
+    "description": "Sondage en cours : Escalade ? Randonnée ? Vélo ?",
+    "type": "association"
+  },
+  {
+    "id": 3,
+    "title": "Sortie Automne (Sondage en cours)",
+    "date": "2026-11-22",
+    "location": "Lieu à confirmer",
+    "description": "Après-midi détente. Sondage en cours : Laser Game ? Bowling ? Karting ?",
+    "type": "association"
+  },
+  {
+    "id": 4,
+    "title": "Loto du Club Rugby Grane",
+    "date": "2026-04-25",
+    "location": "Grane",
+    "description": "Les bénéfices seront reversés à notre association. Venez nombreux ! (3€/carton)",
+    "type": "partenaire"
+  },
+  {
+    "id": 5,
+    "title": "Semi Marathon Bourg-lès-Valence",
+    "date": "2026-04-26",
+    "location": "Bourg-lès-Valence",
+    "description": "L'association tiendra un stand lors de cet événement sportif.",
+    "type": "partenaire"
+  },
+  {
+    "id": 6,
+    "title": "Duo de l'Hermitage",
+    "date": "2026-05-23",
+    "location": "Tain-l'Hermitage / Tournon",
+    "description": "Evénement sportif partenaire. (Dates : 23 et 24 mai)",
+    "type": "partenaire"
+  },
+  {
+    "id": 7,
+    "title": "Boucle du Diabète",
+    "date": "2026-06-06",
+    "description": "Participation à l'événement national. (Dates : 6 et 14 juin)",
+    "type": "partenaire"
+  }
+]
