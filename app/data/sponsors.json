@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Entreprise A",
+    "logo": "https://placehold.co/200x100?text=Sponsor+A",
+    "website": "https://example.com"
+  },
+  {
+    "id": 2,
+    "name": "Fondation B",
+    "logo": "https://placehold.co/200x100?text=Sponsor+B",
+    "website": "https://example.com"
+  },
+  {
+    "id": 3,
+    "name": "Magasin C",
+    "logo": "https://placehold.co/200x100?text=Sponsor+C",
+    "website": "https://example.com"
+  },
+  {
+    "id": 4,
+    "name": "Partenaire D",
+    "logo": "https://placehold.co/200x100?text=Sponsor+D",
+    "website": "https://example.com"
+  }
+]

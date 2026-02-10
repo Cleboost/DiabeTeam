@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "url": "https://placehold.co/600x400?text=Event+1",
+    "title": "Rencontre de printemps",
+    "year": 2025
+  },
+  {
+    "id": 2,
+    "url": "https://placehold.co/600x400?text=Event+2",
+    "title": "Atelier Cuisine",
+    "year": 2025
+  },
+  {
+    "id": 3,
+    "url": "https://placehold.co/600x400?text=Event+3",
+    "title": "Sortie Vélo",
+    "year": 2024
+  },
+  {
+    "id": 4,
+    "url": "https://placehold.co/600x400?text=Event+4",
+    "title": "Conférence Médicale",
+    "year": 2024
+  },
+  {
+    "id": 5,
+    "url": "https://placehold.co/600x400?text=Event+5",
+    "title": "Pique-nique Annuel",
+    "year": 2023
+  },
+  {
+    "id": 6,
+    "url": "https://placehold.co/600x400?text=Event+6",
+    "title": "Forum des Associations",
+    "year": 2023
+  }
+]
