@@ -4,6 +4,6 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-	base: process.env.BASE_PATH || "/DiabeTeam/",
+	base: process.env.BASE_PATH || "/",
 	plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
