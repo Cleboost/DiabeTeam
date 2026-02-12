@@ -1,5 +1,4 @@
-name: Deploy (preview)
-
+name: Preview
 on:
   pull_request:
     types: [opened, reopened, synchronize, closed]
@@ -12,7 +11,10 @@ permissions:
 concurrency: preview-${{ github.ref }}
 
 jobs:
+  ci:
+    uses: ./.github/workflows/ci.yml
   deploy-preview:
+    needs: ci
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
