@@ -1,29 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #5EA5C7;
-  --color-accent: #F4D21C;
-  --color-text-base: #111827;
-  --color-bg-base: #FFFFFF;
-  --color-bg-alt: #F7FAFC;
-  --color-gray-ui: #E5E7EB;
+	--color-primary: #5ea5c7;
+	--color-accent: #f4d21c;
+	--color-text-base: #111827;
+	--color-bg-base: #ffffff;
+	--color-bg-alt: #f7fafc;
+	--color-gray-ui: #e5e7eb;
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+	--font-sans:
+		"Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
 }
 
 html,
 body {
-  @apply bg-bg-base text-text-base antialiased;
-  font-family: var(--font-sans);
+	@apply bg-bg-base text-text-base antialiased;
+	font-family: var(--font-sans);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--font-heading);
 }
 
 @layer utilities {
-  .container-responsive {
-    @apply max-w-[1200px] mx-auto px-4 md:px-8 lg:px-12;
-  }
+	.container-responsive {
+		@apply max-w-[1200px] mx-auto px-4 md:px-8 lg:px-12;
+	}
 }
