@@ -27,7 +27,6 @@ export function meta() {
 }
 
 export default function Galerie() {
-
 	const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(
 		null,
 	);
