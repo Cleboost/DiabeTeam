@@ -1,5 +1,11 @@
-import { useState, useEffect, useCallback } from "react";
-import { X, ZoomIn, ChevronLeft, ChevronRight, Image as ImageIcon } from "lucide-react";
+import {
+	ChevronLeft,
+	ChevronRight,
+	Image as ImageIcon,
+	X,
+	ZoomIn,
+} from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
 import galleryData from "../data/gallery-events.json";
 
 export function meta() {
@@ -204,7 +210,7 @@ export default function Galerie() {
 						<ChevronRight size={48} />
 					</button>
 
-					  {/* biome-ignore lint/a11y/useKeyWithClickEvents: Image view within lightbox */}
+					{/* biome-ignore lint/a11y/useKeyWithClickEvents: Image view within lightbox */}
 					<img
 						src={selectedEvent.images[focusedImageIndex]}
 						alt={`${selectedEvent.title} - Full`}
@@ -231,7 +237,8 @@ function EventCard({
 	const count = event.images.length;
 	// Use different images for sides if available, otherwise reuse cover or second image
 	const leftImg = count > 1 ? event.images[1] : null;
-	const rightImg = count > 2 ? event.images[2] : (count > 1 ? event.images[1] : null);
+	const rightImg =
+		count > 2 ? event.images[2] : count > 1 ? event.images[1] : null;
 
 	return (
 		<button
@@ -250,7 +257,7 @@ function EventCard({
 						/>
 					</div>
 				)}
-				
+
 				{/* Left Wing */}
 				{leftImg && (
 					<div className="absolute inset-0 z-0 origin-bottom-left transition-all duration-500 ease-out opacity-0 translate-x-0 rotate-0 group-hover:opacity-100 group-hover:-translate-x-8 group-hover:-rotate-6">
@@ -272,7 +279,7 @@ function EventCard({
 						/>
 						{/* Overlay */}
 						<div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 transition-opacity duration-300" />
-						
+
 						{/* Content */}
 						<div className="absolute bottom-0 left-0 w-full p-5 text-white">
 							<div className="flex items-center justify-between mb-1">
@@ -290,7 +297,7 @@ function EventCard({
 								{event.title}
 							</h3>
 						</div>
-						
+
 						{/* Hover Icon */}
 						<div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-50 group-hover:scale-100">
 							<div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30 text-white shadow-xl">
