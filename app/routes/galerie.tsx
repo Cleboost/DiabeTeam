@@ -7,6 +7,13 @@ import {
 } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import galleryData from "../data/gallery-events.json";
+import { resolveAsset } from "../utils/assets";
+
+const events = galleryData.map((event) => ({
+	...event,
+	cover: resolveAsset(event.cover),
+	images: event.images.map(resolveAsset),
+}));
 
 export function meta() {
 	return [
@@ -20,7 +27,7 @@ export function meta() {
 }
 
 export default function Galerie() {
-	const events = galleryData;
+
 	const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(
 		null,
 	);
