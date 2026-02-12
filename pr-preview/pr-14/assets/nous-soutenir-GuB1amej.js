@@ -1,0 +1,1 @@
+import{w as o,x as e}from"./chunk-JZWAC4HX-BvbgUU3y.js";function n(){return e("https://www.helloasso.com/associations/diabeteam-26-07-association-des-familles-de-l-ajd-drome-ardeche")}const a=o(function(){return null});export{n as clientLoader,a as default};
