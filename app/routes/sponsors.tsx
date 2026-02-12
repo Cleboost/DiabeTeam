@@ -1,9 +1,8 @@
-import type { Route } from "./+types/sponsors";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import sponsors from "../data/sponsors.json";
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
     { title: "Nos Sponsors - Diab&Team 26-07" },
     {
