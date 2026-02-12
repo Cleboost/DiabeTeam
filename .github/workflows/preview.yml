@@ -1,5 +1,4 @@
-name: Deploy (preview)
-
+name: Preview
 on:
   pull_request:
     types: [opened, reopened, synchronize, closed]
