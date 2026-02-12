@@ -16,4 +16,4 @@ jobs:
               with:
                   bun-version: latest
             - run: bun install
-            - run: bunx @biomejs/biome ci .
+            - run: bunx @biomejs/biome ci . --reporter=github
