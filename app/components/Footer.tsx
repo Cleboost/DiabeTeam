@@ -1,4 +1,5 @@
-import { Facebook, Heart, Instagram, Mail, Phone } from "lucide-react";
+import { Heart, Mail, Phone } from "lucide-react";
+import { SiFacebook, SiInstagram } from "react-icons/si";
 import { Link } from "react-router";
 
 export function Footer() {
@@ -38,7 +39,7 @@ export function Footer() {
 							className="p-2 bg-white rounded-full border border-gray-ui hover:border-primary hover:text-primary transition-colors text-gray-600"
 							aria-label="Facebook"
 						>
-							<Facebook size={20} />
+							<SiFacebook size={20} />
 						</a>
 						<a
 							href="https://www.instagram.com/diabeteam2607/"
@@ -47,7 +48,7 @@ export function Footer() {
 							className="p-2 bg-white rounded-full border border-gray-ui hover:border-primary hover:text-primary transition-colors text-gray-600"
 							aria-label="Instagram"
 						>
-							<Instagram size={20} />
+							<SiInstagram size={20} />
 						</a>
 					</div>
 				</div>
