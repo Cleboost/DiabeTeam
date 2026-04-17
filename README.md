@@ -1,87 +1,83 @@
-# Welcome to React Router!
+<div align="center">
+  <img src="public/logo.png" alt="DiabeTeam Logo" width="150" />
+  
+  <h1>DiabeTeam</h1>
+  
+  <p>Le site officiel de l'association DiabeTeam.</p>
 
-A modern, production-ready template for building full-stack React applications using React Router.
+  <!-- Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/React_Router_7-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router" />
+    <img src="https://img.shields.io/badge/React_19-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS_v4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+    <img src="https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white" alt="Bun" />
+    <img src="https://img.shields.io/badge/Cloudflare_Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
+  </p>
+</div>
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 🛠 Stack Technique
 
-## Features
+- **Framework** : [React Router v7](https://reactrouter.com/) avec [React 19](https://react.dev/)
+- **Style** : [Tailwind CSS v4](https://tailwindcss.com/)
+- **Langage** : [TypeScript](https://www.typescriptlang.org/)
+- **Package Manager** : [Bun](https://bun.sh/)
+- **Qualité de code** : [Biome](https://biomejs.dev/) (Linter & Formatter) et [Knip](https://knip.dev/) (Analyse statique)
+- **Déploiement** : [Cloudflare Pages](https://pages.cloudflare.com/) (via Wrangler)
+- **CI/CD** : GitHub Actions
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 🚀 Démarrage Rapide
 
-## Getting Started
+### Prérequis
+
+Assurez-vous d'avoir [Bun](https://bun.sh/) installé sur votre machine.
 
 ### Installation
 
-Install the dependencies:
+Clonez le dépôt et installez les dépendances :
 
 ```bash
-npm install
+bun install
 ```
 
-### Development
+### Développement
 
-Start the development server with HMR:
+Lancez le serveur de développement local avec Hot Module Replacement (HMR) :
 
 ```bash
-npm run dev
+bun run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+L'application sera accessible sur `http://localhost:5173`.
 
-## Building for Production
+## 📦 Scripts Disponibles
 
-Create a production build:
+Voici les commandes principales définies dans le `package.json` :
 
-```bash
-npm run build
+- `bun run dev` : Démarre le serveur de développement.
+- `bun run build` : Construit l'application optimisée pour la production.
+- `bun run typecheck` : Vérifie les types TypeScript du projet.
+- `bun run deploy` : Construit et déploie l'application sur Cloudflare Pages.
+- `bunx biome check` : Vérifie le formatage et le linting du code.
+- `bunx knip` : Détecte les fichiers, dépendances et exports inutilisés.
+
+## 📂 Structure du projet
+
+```text
+/
+├── app/               # Code source principal (composants, routes, logique)
+│   ├── components/    # Composants réutilisables (UI)
+│   ├── data/          # Fichiers de données (JSON)
+│   ├── routes/        # Pages de l'application (basées sur les fichiers)
+│   └── utils/         # Fonctions utilitaires
+├── public/            # Fichiers statiques (images de la galerie, logos, favicon)
+├── scripts/           # Scripts utilitaires (ex: génération de données)
+├── .github/           # Configuration des actions et dépendances GitHub
+└── .wrangler/         # Configuration et état local de Cloudflare Wrangler
 ```
-
-## Deployment
-
-### Docker Deployment
-
-To build and run using Docker:
-
-```bash
-docker build -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+<div align="center">
+  Développé avec ❤️ par Cleboost
+</div>
