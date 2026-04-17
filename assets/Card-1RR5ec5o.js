@@ -1,0 +1,1 @@
+import{t as e}from"./jsx-runtime-D8Ao8b4s.js";import{t}from"./utils-5s0wHXcC.js";var n=e();function r({children:e,className:r,...i}){return(0,n.jsx)(`div`,{className:t(`bg-white rounded-2xl shadow-sm border border-gray-ui/50 overflow-hidden`,r),...i,children:e})}export{r as t};

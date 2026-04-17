@@ -1,1 +1,0 @@
-import{T as e,k as t}from"./chunk-JZWAC4HX-DQr1xgoR.js";function n(){return e(`/nous-soutenir`)}var r=t(function(){return null});export{n as clientLoader,r as default};
