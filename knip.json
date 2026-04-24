@@ -1,5 +1,4 @@
 {
 	"$schema": "https://unpkg.com/knip@5/schema-jsonc.json",
-	"ignore": ["scripts/generate-gallery.ts"],
-	"ignoreUnresolved": ["/\\.\\/\\+types\\/.*/"]
+	"ignore": ["scripts/generate-gallery.ts"]
 }
