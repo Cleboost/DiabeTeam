@@ -1,6 +1,7 @@
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router";
+import { motion } from "framer-motion";
 import { cn } from "../lib/utils";
 import { Button } from "./Button";
 
@@ -43,13 +44,20 @@ export function Header() {
 							key={item.href}
 							to={item.href}
 							className={cn(
-								"text-sm font-medium transition-colors hover:text-primary",
+								"relative py-1 text-sm font-medium transition-colors hover:text-primary",
 								location.pathname === item.href
 									? "text-primary font-semibold"
 									: "text-text-base",
 							)}
 						>
 							{item.label}
+							{location.pathname === item.href && (
+								<motion.div
+									layoutId="nav-underline"
+									className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"
+									transition={{ type: "spring", stiffness: 380, damping: 30 }}
+								/>
+							)}
 						</Link>
 					))}
 					<Button
