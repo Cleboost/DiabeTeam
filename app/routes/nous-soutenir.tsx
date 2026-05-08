@@ -1,12 +1,8 @@
-import { redirect } from "react-router";
-
-export function clientLoader() {
-	// Redirect directly to HelloAsso page for now as MVP
-	return redirect(
-		"https://www.helloasso.com/associations/diabeteam-26-07-association-des-familles-de-l-ajd-drome-ardeche",
-	);
-}
+import { useEffect } from "react";
 
 export default function NousSoutenir() {
+	useEffect(() => {
+		window.location.href = "https://www.helloasso.com/associations/diabeteam-26-07-association-des-familles-de-l-ajd-drome-ardeche";
+	}, []);
 	return null;
 }

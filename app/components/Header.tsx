@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
-import { Link, useLocation } from "react-router";
+import { Link, useRouter } from "../lib/router";
 import { cn } from "../lib/utils";
 import { Button } from "./Button";
 
@@ -17,7 +17,7 @@ const NAV_ITEMS = [
 
 export function Header() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const location = useLocation();
+	const { path } = useRouter();
 
 	return (
 		<header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-ui/50">
@@ -45,13 +45,13 @@ export function Header() {
 							to={item.href}
 							className={cn(
 								"relative py-1 text-sm font-medium transition-colors hover:text-primary",
-								location.pathname === item.href
+								path === item.href
 									? "text-primary font-semibold"
 									: "text-text-base",
 							)}
 						>
 							{item.label}
-							{location.pathname === item.href && (
+							{path === item.href && (
 								<motion.div
 									layoutId="nav-underline"
 									className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full"
@@ -89,7 +89,7 @@ export function Header() {
 							to={item.href}
 							className={cn(
 								"px-4 py-2 rounded-lg text-base font-medium transition-colors hover:bg-gray-ui/20",
-								location.pathname === item.href
+								path === item.href
 									? "text-primary bg-primary/5"
 									: "text-text-base",
 							)}

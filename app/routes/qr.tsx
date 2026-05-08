@@ -1,9 +1,10 @@
-import { redirect } from "react-router";
-
-export function clientLoader() {
-	return redirect("/nous-soutenir");
-}
+import { useEffect } from "react";
+import { useRouter } from "../lib/router";
 
 export default function QR() {
+	const { navigate } = useRouter();
+	useEffect(() => {
+		navigate("/nous-soutenir");
+	}, [navigate]);
 	return null;
 }

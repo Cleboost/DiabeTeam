@@ -1,20 +1,8 @@
 import { ArrowRight, Calendar, Heart, MapPin, Users } from "lucide-react";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
-import events from "../data/events.json"; // Assuming json import is configured or works in Bun/Vite
+import events from "../data/events.json";
 import sponsors from "../data/sponsors.json";
-import type { Route } from "./+types/home";
-
-export function meta(_args: Route.MetaArgs) {
-	return [
-		{ title: "Diab&Team 26-07 - Association des familles DT1 Drôme Ardèche" },
-		{
-			name: "description",
-			content:
-				"Soutenir les familles d'enfants diabétiques de type 1, créer du lien, organiser des événements et sensibiliser. Rejoignez la communauté Diab&Team !",
-		},
-	];
-}
 
 export default function Home() {
 	const nextEvents = events.slice(0, 3);

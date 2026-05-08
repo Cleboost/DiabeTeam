@@ -1,14 +1,13 @@
-import { reactRouter } from "@react-router/dev/vite";
+import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 
 export default defineConfig({
 	base: process.env.BASE_PATH || "/",
-	plugins: [tailwindcss(), reactRouter()],
+	plugins: [react(), tailwindcss()],
 	resolve: {
-		tsconfigPaths: true,
-	},
-	ssr: {
-		noExternal: ["lucide-react"],
+		alias: {
+			"~": "/app",
+		},
 	},
 });

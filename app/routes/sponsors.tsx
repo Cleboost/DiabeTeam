@@ -2,16 +2,6 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import sponsors from "../data/sponsors.json";
 
-export function meta() {
-	return [
-		{ title: "Nos Sponsors - Diab&Team 26-07" },
-		{
-			name: "description",
-			content:
-				"Découvrez les partenaires qui soutiennent les actions de Diab&Team 26-07.",
-		},
-	];
-}
 
 export default function Sponsors() {
 	return (

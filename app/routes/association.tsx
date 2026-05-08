@@ -1,15 +1,5 @@
 import { Button } from "../components/Button";
 
-export function meta() {
-	return [
-		{ title: "L'Association - Diab&Team 26-07" },
-		{
-			name: "description",
-			content:
-				"Découvrez Diab&Team 26-07, l'association des familles d'enfants diabétiques de type 1 en Drôme et Ardèche.",
-		},
-	];
-}
 
 export default function Association() {
 	return (

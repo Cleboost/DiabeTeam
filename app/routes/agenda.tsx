@@ -1,18 +1,6 @@
 import { MapPin } from "lucide-react";
 import { Card } from "../components/Card";
 import events from "../data/events.json";
-import type { Route } from "./+types/agenda";
-
-export function meta(_args: Route.MetaArgs) {
-	return [
-		{ title: "Agenda - Diab&Team 26-07" },
-		{
-			name: "description",
-			content:
-				"Retrouvez tous les prochains événements, rencontres et ateliers organisés par Diab&Team 26-07.",
-		},
-	];
-}
 
 export default function Agenda() {
 	const assocEvents = events.filter((e) => e.type === "association");

@@ -15,16 +15,6 @@ const events = galleryData.map((event) => ({
 	images: event.images.map(resolveAsset),
 }));
 
-export function meta() {
-	return [
-		{ title: "Galerie Photos - Diab&Team 26-07" },
-		{
-			name: "description",
-			content:
-				"Retrouvez en images les moments forts de la vie de l'association Diab&Team 26-07.",
-		},
-	];
-}
 
 export default function Galerie() {
 	const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(

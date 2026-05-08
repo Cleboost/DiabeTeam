@@ -34,7 +34,6 @@ jobs:
               with:
                   bun-version: latest
             - run: bun install
-            - run: bun x react-router typegen
             - run: bunx knip --reporter github-actions
 
     types:
