@@ -1,6 +1,5 @@
 import { Button } from "../components/Button";
 
-
 export default function Association() {
 	return (
 		<div className="container-responsive py-12 md:py-20">

@@ -11,7 +11,3 @@ export function Layout({ children }: { children: React.ReactNode }) {
 		</div>
 	);
 }
-
-export default function App() {
-	return null; // This will be replaced by App.tsx logic
-}

@@ -2,7 +2,6 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import sponsors from "../data/sponsors.json";
 
-
 export default function Sponsors() {
 	return (
 		<div className="container-responsive py-12 md:py-20">

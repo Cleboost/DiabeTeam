@@ -29,13 +29,15 @@ export default function MentionsLegales() {
 						2. Direction de la publication
 					</h2>
 					<p>
-						La directrice de la publication est Aurélie Balarot, en sa qualité de
-						présidente de l'association.
+						La directrice de la publication est Aurélie Balarot, en sa qualité
+						de présidente de l'association.
 					</p>
 				</section>
 
 				<section>
-					<h2 className="text-2xl font-bold text-text-base mb-4">3. Hébergement</h2>
+					<h2 className="text-2xl font-bold text-text-base mb-4">
+						3. Hébergement
+					</h2>
 					<p>
 						Le site est hébergé par <strong>Cloudflare</strong>.
 						<br />
@@ -51,8 +53,8 @@ export default function MentionsLegales() {
 						L'ensemble des éléments constituant ce site (textes, graphismes,
 						logos, sons, photos, icônes) est la propriété exclusive de
 						l'association Diab&Team 26-07, sauf mention contraire. Toute
-						reproduction, représentation, modification, publication, adaptation de
-						tout ou partie des éléments du site, quel que soit le moyen ou le
+						reproduction, représentation, modification, publication, adaptation
+						de tout ou partie des éléments du site, quel que soit le moyen ou le
 						procédé utilisé, est interdite, sauf autorisation écrite préalable.
 					</p>
 				</section>
@@ -65,8 +67,8 @@ export default function MentionsLegales() {
 						L'association Diab&Team 26-07 ne pourra être tenue responsable des
 						dommages directs et indirects causés au matériel de l'utilisateur,
 						lors de l'accès au site. De plus, les informations médicales et
-						conseils partagés sur ce site ne remplacent en aucun cas un avis médical
-						professionnel.
+						conseils partagés sur ce site ne remplacent en aucun cas un avis
+						médical professionnel.
 					</p>
 				</section>
 			</div>

@@ -15,7 +15,6 @@ const events = galleryData.map((event) => ({
 	images: event.images.map(resolveAsset),
 }));
 
-
 export default function Galerie() {
 	const [selectedEvent, setSelectedEvent] = useState<(typeof events)[0] | null>(
 		null,
